@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tip</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Travel Tip</h1>
+
+        <div class="buttons">
+            <form>
+                <input class="searched-address" type="text" placeholder="Enter Location" name="address" autofocus></input>
+                <button type="submit" class="find-location-btn" title="find location">
+                    <i class="fas fa-location-arrow"></i>
+                </button>
+            </form>
+            <button class="my-location-btn" title="my location">
+                <i class="fas fa-compass"></i>
+            </button>
+            <button type="button" id="copy" class="copy-location-btn" title="copy location">
+                <i class="fas fa-copy"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="address-container">
+            <p class="address"></p>
+            <!-- <button type="button" id="copy" class="copy-location-btn" title="copy location">
+                <i class="fas fa-copy"></i>
+            </button> -->
+        </div>
+
+        <div class="data-container">
+            <ul class="weather">
+                <li>
+                    <h2>Weather Today</h2>
+                </li>
+                <li class="temp"></li>
+                <li class="humidity"></li>
+                <li class="wind"></li>
+                <li class="weather-type"></li>
+                <li class="icon">
+                    <img class="weather-icon" />
+                </li>
+            </ul>
+            <div id="map">
+            </div>
+        </div>
+
+        <input id="input" class="copy-input" type="text" />
+    </main>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

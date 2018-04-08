@@ -1,0 +1,192 @@
+/* Fonts */
+/*---Caveat-Regular--*/
+@font-face {
+    font-family: caveat;
+    src: url('../fonts/Caveat/Caveat-Regular.ttf');
+}
+
+/*---Caveat-Bold--*/
+@font-face {
+    font-family: caveatBold;
+    src: url('../fonts/Caveat/Caveat-Bold.ttf');
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+body{
+    font-family: caveat, 'Courier New', Courier, monospace;
+    background: linear-gradient(to right,#688fe5d4,#a1c089);
+}
+
+.location{
+    font-family: caveatBold;
+}
+
+.address-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.weather{
+    list-style-type: none;
+    -webkit-padding-start: 0;
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    width: 20%;
+    background-color: #d0d4d661;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 30vw;
+}
+
+.copy-input{
+    margin-left: -1000px;
+}
+
+.data-container{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+#map{
+    width: 100%; 
+    height: 30vw;
+    box-shadow: 10px 10px 5px grey;
+    /* height: 400px; */
+}
+
+.address{
+    margin-left: 20px;
+}
+
+h1{
+    margin-left: 20px;
+    font-family: caveatBold;
+    font-size: 70px;
+    color: #2d7d55a1;
+    text-shadow: 2px 2px 8px black;
+}
+
+.searched-address{
+    background-color: lightgray;
+    min-width: 110px;
+}
+
+button{
+    background-color: #808080a8;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li h2{
+    text-align: center;
+    font-family: caveatBold;
+    font-size: 30px;
+    color: #575d82;
+}
+
+li.icon{
+    align-self: center;
+}
+
+.weather>li:not(:first-child):not(:last-child){
+    margin-left: 20px;
+}
+
+.searched-address{
+    font-family: caveat,'Courier New', Courier, monospace;
+    width: 30vw;
+    height: 20px;
+}
+
+li, .address, .searched-address{
+    font-size: 20px;
+}
+
+button{
+    margin-left: 5px;
+}
+
+
+@media (max-width: 875px){
+    #map{
+        height: 50vw;
+        margin-bottom: 5vw;
+    }
+
+     .data-container{
+         flex-direction: column-reverse;
+         margin-top: 20px;
+         margin-right: 15px;
+         margin-left: 15px;
+     }
+ 
+     .weather{
+         width: 90%;
+         margin-left: 5%;
+         margin-right: 30px;
+     }
+
+     h1{
+         font-size: 45px;
+     }
+
+     .buttons{
+        margin-left:0;
+    } 
+}
+
+@media (max-width: 440px){
+    .address{
+        margin-right: 10vw;
+    }
+
+    h1{
+        display: none;
+    }
+
+    .copy-location-btn{
+        margin-top: 0;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .weather{
+        margin-top: 5%;
+    }
+
+}
+
+@media (min-width: 288px){
+    .address-container{
+        align-items: flex-start;
+    }
+
+    form{
+        display: flex;
+    }
+}
+
