@@ -152,7 +152,7 @@ function reverseGeocoding(lat, lng) {
 function getWeather(lat, lon) {
     let key = WEATHER_KEY;
 
-    return axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`)
+    return axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`)
         .then(function (res) {
             renderService.renderWeather(res);
             return res;
