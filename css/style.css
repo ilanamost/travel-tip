@@ -53,6 +53,7 @@ body{
     flex-direction: column;
     border-radius: 30px;
     width: 30vw;
+     margin-right: 35px;
 }
 
 .copy-input{
