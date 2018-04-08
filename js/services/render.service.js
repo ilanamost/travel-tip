@@ -10,7 +10,7 @@ function renderWeather(res) {
     elHumidity.innerText = 'Humidity: ' + res.data.main.humidity + ' %';
     elSpeed.innerText = 'Wind Speed: ' + Math.round(res.data.wind.speed * 3.6) + ' Km/h';
     elWeatherType.innerText = 'Weather Type: ' + res.data.weather[0].main;
-    elWeatherIcon.src = `http://openweathermap.org/img/w/${res.data.weather[0].icon}.png`;
+    elWeatherIcon.src = `https://openweathermap.org/img/w/${res.data.weather[0].icon}.png`;
 }
 
 
